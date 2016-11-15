@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <title>Design Web Responsive</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body>
+  <div id="pagewrap">
+     <div id="header">
+    	<h1>JUDUL</h1>
+        <div id="navcontainer">
+            <label class="show-menu" for="show-menu"><i class="fa fa-bars fa-2"></i></label>
+            <input autocomplete="off" id="show-menu" role="button" type="checkbox">
+            <ul id="menus">
+            <li><a id="hal1" href="">Halaman 1</a></li>
+            <li><a id="hal2" href="">Halaman 2</a></li>
+            <li><a id="hal3" href="">Halaman 3</a></li>
+            </ul>
+        </div>
+     </div>
+     <div id="content">
+        <h1>Content</h1>
+        <p>Isi Content</p>
+     </div>
+     <div id="sidebar">
+        <h1>SIDEBAR</h1>
+        <p>Isi Sidebar</p>
+     </div>
+     <div id="footer">
+         <h1>Footer</h1>
+         <footer>Disini Footernya</footer>
+     </div>
+  </div>
+  <script type="text/javascript" src="jquery/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      $('#hal1').click(function(event) {
+        event.preventDefault();
+      $.ajax({
+        url: 'content/halaman1.html',
+        type: 'GET',
+        dataType: 'html',
+        data: '',
+      })
+      .done(function(data) {
+        console.log("success");
+        $('#content').html(data);
+      });
+      });// end hal2
+
+      $('#hal2').click(function(event) {
+        event.preventDefault();
+      $.ajax({
+        url: 'content/halaman2.html',
+        type: 'GET',
+        dataType: 'html',
+        data: '',
+      })
+      .done(function(data) {
+        console.log("success");
+        $('#content').html(data);
+      });
+      });// end hal2
+
+      $('#hal3').click(function(event) {
+        event.preventDefault();
+      $.ajax({
+        url: 'content/halaman3.html',
+        type: 'GET',
+        dataType: 'html',
+        data: '',
+      })
+      .done(function(data) {
+        console.log("success");
+        $('#content').html(data);
+      });
+      });// end hal2
+
+
+    });
+  
+  </script>
+</body>
+</html>

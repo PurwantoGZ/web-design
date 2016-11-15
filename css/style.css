@@ -1,0 +1,110 @@
+body{
+ background:#fff;
+ color:#666;
+ font:85%/140% Arial,Helvetica,sans-serif;
+ margin: 0 auto;
+}
+
+a{
+  color:#69c;
+  text-decoration:none;
+}
+
+a:hover{
+ color:#f60;
+}
+
+h1{
+  font:1.7em;
+  line-height:110%;
+  color:#000;
+}
+
+h1,h2,h3{
+  color:#000;
+}
+
+h3{
+  border-top:solid 1px #eee;
+  padding:20px 0;
+  margin:20px 0 0;
+  font-size:150%;
+}
+
+p{
+  margin:0 0 20px;
+}
+
+/*Atur Html5 Element ke block*/
+
+article,aside,details,figcaption,figure,footer,header,
+hgroup,menu,nav,section{
+  display:block;
+}
+
+#pagewrap{
+  padding:5px;
+  width:960px;
+  margin:20px auto;
+}
+
+#header{
+  height:180px;
+}
+
+#menu{
+  width:auto;
+  height:40px;
+}
+
+.menu-list{
+  background:orange;
+  width:130px;
+  text-align:center;
+  line-height:40px;
+  margin-right:10px;
+  float:left;
+}
+.menu-list:hover{
+  background:orangered;
+  color:#fff;
+  cursor:pointer;
+}
+
+#content{
+  width:600px;
+  float:left;
+}
+
+#sidebar{
+  width:300px;
+  float:right;
+}
+
+#footer{
+  clear:both;
+}
+
+#header,#content,#sidebar,#footer{
+  padding:10px;
+}
+
+#content{
+  background:#f8f8f8;
+}
+
+#sidebar{
+  background:#f0efef;
+}
+
+#header,#content,#sidebar{
+  margin-bottom:5px;
+}
+
+#pagewrap,#header,#content,#sidebar,#footer{
+  border:solid 1px #ccc;
+}
+
+.wrapper{
+  overflow:hidden;
+}
